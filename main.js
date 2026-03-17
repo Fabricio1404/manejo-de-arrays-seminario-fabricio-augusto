@@ -5,15 +5,14 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
+console.log("---------------------------------------")
+console.log("SISTEMA DE GESTIÓN DE CALIFICACIONES ");
+console.log("---------------------------------------")
+
 let personas = [];
 
 function ingresarPersona() {
     
-    console.log("---------------------------------------")
-    
-      console.log("  SISTEMA DE GESTIÓN DE CALIFICACIONES ");
-    
-    console.log("---------------------------------------")
 
 
   rl.question("Ingrese el nombre: ", function(nombre) {
@@ -31,7 +30,7 @@ function ingresarPersona() {
             ingresarPersona();
           } else {
 
-            console.log("\nListado de personas ingresadas:");
+            console.log("\n--- Listado de personas ingresadas: ---");
 
             personas.forEach(p => {
               console.log(p[0] + " - " + p[1] + " - " + p[2]);
@@ -39,7 +38,7 @@ function ingresarPersona() {
 
             let ordenado = [...personas].sort((a, b) => b[2] - a[2]);
 
-            console.log("\nListado ordenado por nota (de mayor a menor:");
+            console.log("\n--- Listado ordenado por nota (de mayor a menor: ---");
 
             ordenado.forEach(p => {
               console.log(p[0] + " - " + p[1] + " - " + p[2]);
@@ -53,7 +52,7 @@ function ingresarPersona() {
 
             let promedio = suma / personas.length;
 
-            console.log("\nPromedio de Notas: " + promedio.toFixed(2));
+            console.log("\n--- Promedio de Notas: ---" + promedio.toFixed(2));
 
             rl.close();
           }
