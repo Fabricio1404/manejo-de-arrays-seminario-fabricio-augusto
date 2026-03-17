@@ -36,7 +36,7 @@ El objetivo de este trabajo es practicar:
 
 ---
 
-# ▶EJECUCIÓN DEL PROYECTO
+# EJECUCIÓN DEL PROYECTO
 
 ---
 
@@ -54,7 +54,7 @@ node --version
 
 ---
 
-## ▶Pasos para ejecutar
+## Pasos para ejecutar
 
 1. Abrir la terminal en la carpeta del proyecto
 2. Ejecutar:
@@ -79,7 +79,7 @@ node main.js
 
 * Tener instalado Python 3
 
-## 🔍 Verificar instalación
+## Verificar instalación
 
 ```bash
 python --version
@@ -93,7 +93,7 @@ py --version
 
 ---
 
-## ▶️ Pasos para ejecutar
+## Pasos para ejecutar
 
 1. Abrir la terminal en la carpeta del proyecto
 2. Ejecutar:
